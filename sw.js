@@ -1,7 +1,7 @@
 const filesToCache = [
     "/",
   ];
-  var cacheName = 'CrazysGame';
+  var cacheName = 'techgamesworld';
   
   self.addEventListener('install', async function (event) {
     try {
