@@ -2,7 +2,7 @@ let categories = {};
 let objKey,
     gamee4 = {};
 const categoriesDiv = document.getElementById("main-div");
-
+const show = false;
 $("#main-div").hide();
 function mathRamdom(max, min) {
     return `${`${Math.random() * (max - min) + min}`.split(".")[0]}`;
@@ -64,7 +64,7 @@ const apiCall = () => {
                         </div>
                     `;
                     ;
-                    if (index === 1) {
+                    if (index === 1 && show) {
 
                         categoriesData += `
                         <div class="categories-container">
@@ -125,7 +125,7 @@ const apiCall = () => {
                         </div>
                       `;
                     }
-                    if (index === 3) {
+                    if (index === 3 && show) {
 
                         categoriesData += `
                         <div class="categories-container">
@@ -187,7 +187,7 @@ const apiCall = () => {
                       `;
                     }
                    
-                    if (index === 5) {
+                    if (index === 5 && show) {
 
                         categoriesData += `
                         <div class="categories-container">
@@ -248,7 +248,7 @@ const apiCall = () => {
                         </div>
                       `;
                     }
-                    if (index === 6) {
+                    if (index === 6 && show) {
 
                         categoriesData += `
                         <div class="categories-container">
@@ -309,7 +309,7 @@ const apiCall = () => {
                         </div>
                       `;
                     }
-                    if (index === 7) {
+                    if (index === 7 && show) {
 
                         categoriesData += `
                         <div class="categories-container">
