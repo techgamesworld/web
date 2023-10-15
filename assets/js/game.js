@@ -36,7 +36,7 @@ const gameLoad = () => {
         console.log(error);
     }
 
-    var gameL = "https://6780.play.gamezop.com";
+    var gameL = "https://6780.play.gamezop.com/";
     window.open(gameL);
     console.log(gameL);
 }
