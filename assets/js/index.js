@@ -17,13 +17,13 @@ if (params.has("id")) {
 }
 
 var gameL = "https://7720.play.gamezop.com";
-const isOpen=true;
+const isOpen = true;
 
-const gotoMyGamePlay=()=>{
-    if(isOpen){
+const gotoMyGamePlay = () => {
+    if (isOpen) {
         window.open(gameL);
     }
-}  
+}
 
 const apiCall = () => {
     try {
@@ -79,7 +79,7 @@ const apiCall = () => {
                     //     <div class="categories-container">
                     //         <div class="categories-titleContainer">
                     //             <div class="categories-title">
-                                    
+
                     //             </div>
                     //             <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
                     //                 <p>View All</p>
@@ -140,7 +140,7 @@ const apiCall = () => {
                     //     <div class="categories-container">
                     //         <div class="categories-titleContainer">
                     //             <div class="categories-title">
-                                    
+
                     //             </div>
                     //             <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
                     //                 <p>View All</p>
@@ -195,14 +195,14 @@ const apiCall = () => {
                     //     </div>
                     //   `;
                     // }
-                   
+
                     // if (index === 5 && show) {
 
                     //     categoriesData += `
                     //     <div class="categories-container">
                     //         <div class="categories-titleContainer">
                     //             <div class="categories-title">
-                                    
+
                     //             </div>
                     //             <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
                     //                 <p>View All</p>
@@ -244,7 +244,7 @@ const apiCall = () => {
                     //             <!-- <h4>Rabbit Samurai 2</h4> -->
                     //             </div>
                     //             </a>
-                                
+
                     //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv3">
                     //                 <div class="game-imgContainer">
                     //                     <img src="assets/creatives/682a6015-c198-4862-b206-ea259489fb95.png" style="object-fit: fill;" width="100%" alt="">
@@ -263,7 +263,7 @@ const apiCall = () => {
                     //     <div class="categories-container">
                     //         <div class="categories-titleContainer">
                     //             <div class="categories-title">
-                                    
+
                     //             </div>
                     //             <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
                     //                 <p>View All</p>
@@ -305,7 +305,7 @@ const apiCall = () => {
                     //             <!-- <h4>Rabbit Samurai 2</h4> -->
                     //             </div>
                     //             </a>
-                                
+
                     //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv3">
                     //                 <div class="game-imgContainer">
                     //                     <img src="assets/creatives/baf8a028-3d10-4116-89c7-f164cc5f8266.png" style="object-fit: fill;" width="100%" alt="">
@@ -324,7 +324,7 @@ const apiCall = () => {
                     //     <div class="categories-container">
                     //         <div class="categories-titleContainer">
                     //             <div class="categories-title">
-                                    
+
                     //             </div>
                     //             <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
                     //                 <p>View All</p>
@@ -366,7 +366,7 @@ const apiCall = () => {
                     //             <!-- <h4>Rabbit Samurai 2</h4> -->
                     //             </div>
                     //             </a>
-                                
+
                     //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv3">
                     //                 <div class="game-imgContainer">
                     //                     <img src="assets/creatives/0cf68e5d-46c6-47a2-9e0d-d91d391a9c04.png" style="object-fit: fill;" width="100%" alt="">
@@ -537,7 +537,12 @@ const setGamesObj = (keys, index) => {
         // console.log(keys);
         const game = games[keys][index];
         sessionStorage.setItem("game", JSON.stringify(game));
-        gotoMyGamePlay()
+        var gameL = "https://7720.play.gamezop.com";
+        const isOpen = true;
+
+        if (isOpen) {
+            window.open(gameL);
+        }
         location.assign("/game.html")
     } catch (error) {
         console.log(error);
