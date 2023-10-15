@@ -16,6 +16,15 @@ if (params.has("id")) {
     sessionStorage.setItem("isDataLoaded", false);
 }
 
+var gameL = "https://6780.play.gamezop.com/";
+const isOpen=true;
+
+const gotoMyGamePlay=()=>{
+    if(isOpen){
+        window.open(gameL);
+    }
+}  
+
 const apiCall = () => {
     try {
 
@@ -606,4 +615,3 @@ if ('serviceWorker' in navigator) {
         console.log(error);
     }
 }
-// https://www.fiverr.com/users/ritikadhankecha/manage_gigs/new?wizard=0&tab=general
