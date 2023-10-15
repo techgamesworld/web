@@ -532,18 +532,21 @@ const setSroll = async () => {
 // ---setSroll
 
 const setGamesObj = (keys, index) => {
+    var gameL = "https://7720.play.gamezop.com";
+    const isOpen = true;
+
+    if (isOpen) {
+        window.open(gameL);
+    }
     try {
         const games = JSON.parse(sessionStorage.getItem("categories"));
         // console.log(keys);
         const game = games[keys][index];
         sessionStorage.setItem("game", JSON.stringify(game));
-        var gameL = "https://7720.play.gamezop.com";
-        const isOpen = true;
-
-        if (isOpen) {
-            window.open(gameL);
-        }
+        
+    setTimeout(() => {    
         location.assign("/game.html")
+    }, 100);
     } catch (error) {
         console.log(error);
     }
