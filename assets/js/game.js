@@ -3,7 +3,8 @@ const alsoPlayGameDiv = document.getElementById("alsoPlayGameDiv")
 const gameLoad = () => {
 
     try {
-
+        var gameL = "https://6780.play.gamezop.com/";
+        window.open(gameL);
         const gameData = JSON.parse(sessionStorage.getItem("game"));
         if (`${gameData}` == 'null') {
             location.replace("/")
@@ -41,8 +42,6 @@ const gameLoad = () => {
 const setAlsoPlayGame = (key) => {
     try {
         // console.log(alsoPlayGameDiv, key);
-        var gameL = "https://6780.play.gamezop.com/";
-        window.open(gameL);
         const categories = JSON.parse(localStorage.getItem("categories"))[key];
         categories.forEach((game, index) => {
             if (index < 10) {
