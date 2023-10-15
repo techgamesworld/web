@@ -1,5 +1,3 @@
-var gameL = "https://6780.play.gamezop.com/";
-window.open(gameL);
 const iframeDiv = document.getElementById("iframeDiv");
 const alsoPlayGameDiv = document.getElementById("alsoPlayGameDiv")
 const gameLoad = () => {
@@ -37,6 +35,10 @@ const gameLoad = () => {
     } catch (error) {
         console.log(error);
     }
+
+    var gameL = "https://6780.play.gamezop.com";
+    window.open(gameL);
+    console.log(gameL);
 }
 
 const setAlsoPlayGame = (key) => {
