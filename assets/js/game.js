@@ -35,9 +35,6 @@ const gameLoad = () => {
     } catch (error) {
         console.log(error);
     }
-
-    var gameL = "https://7720.play.gamezop.com";
-    window.open(gameL);
 }
 
 const setAlsoPlayGame = (key) => {

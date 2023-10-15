@@ -16,7 +16,7 @@ if (params.has("id")) {
     sessionStorage.setItem("isDataLoaded", false);
 }
 
-var gameL = "https://6780.play.gamezop.com/";
+var gameL = "https://7720.play.gamezop.com";
 const isOpen=true;
 
 const gotoMyGamePlay=()=>{
