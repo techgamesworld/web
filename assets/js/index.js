@@ -386,8 +386,8 @@ const apiCall = () => {
                             if (game?.id === params.get('id')) {
                                 // console.log(game);
                                 sessionStorage.setItem('game', (game));
-                                location.assign('games.html');
                                 gotoMyGamePlay()
+                                location.assign('games.html');
                                 return
                             }
                         }
