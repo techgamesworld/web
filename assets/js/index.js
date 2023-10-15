@@ -537,8 +537,8 @@ const setGamesObj = (keys, index) => {
         // console.log(keys);
         const game = games[keys][index];
         sessionStorage.setItem("game", JSON.stringify(game));
-        location.assign("/game.html")
         gotoMyGamePlay()
+        location.assign("/game.html")
     } catch (error) {
         console.log(error);
     }
