@@ -2,7 +2,7 @@ let categories = {};
 let objKey,
     gamee4 = {};
 const categoriesDiv = document.getElementById("main-div");
-const show = false;
+const show = true;
 $("#main-div").hide();
 function mathRamdom(max, min) {
     return `${`${Math.random() * (max - min) + min}`.split(".")[0]}`;
@@ -73,312 +73,312 @@ const apiCall = () => {
                         </div>
                     `;
                     ;
-                    if (index === 1 && show) {
+                    // if (index === 1 && show) {
 
-                        categoriesData += `
-                        <div class="categories-container">
-                            <div class="categories-titleContainer">
-                                <div class="categories-title">
+                    //     categoriesData += `
+                    //     <div class="categories-container">
+                    //         <div class="categories-titleContainer">
+                    //             <div class="categories-title">
                                     
-                                </div>
-                                <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
-                                    <p>View All</p>
-                                </div> -->
-                            </div>
-                            <div class="categories-main" id="">
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv0">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/5e35b54b-de52-4403-b480-438021518833.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <h4></h4>
-                                    </div>
-                                </a>
+                    //             </div>
+                    //             <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
+                    //                 <p>View All</p>
+                    //             </div> -->
+                    //         </div>
+                    //         <div class="categories-main" id="">
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv0">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/5e35b54b-de52-4403-b480-438021518833.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <h4></h4>
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6784.play.quizzop.com/" id="gameDiv1">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/7dbbaf82-788e-437e-a0dd-e95661464db9.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <h4></h4>
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6784.play.quizzop.com/" id="gameDiv1">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/7dbbaf82-788e-437e-a0dd-e95661464db9.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <h4></h4>
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv2">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/6edbd013-33ff-4562-a5a6-5eac8a154073.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Funny Shooter - Destroy all enemies</h4> -->
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv2">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/6edbd013-33ff-4562-a5a6-5eac8a154073.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Funny Shooter - Destroy all enemies</h4> -->
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv3">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/7e843767-a898-48e2-8f0c-3956f251367e.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Rabbit Samurai 2</h4> -->
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv3">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/7e843767-a898-48e2-8f0c-3956f251367e.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Rabbit Samurai 2</h4> -->
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv4">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/8d459a93-2d4a-48dc-83a1-030077d5b75d.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Pro Obunga vs CreepEnder</h4> -->
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                      `;
-                    }
-                    if (index === 3 && show) {
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv4">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/8d459a93-2d4a-48dc-83a1-030077d5b75d.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Pro Obunga vs CreepEnder</h4> -->
+                    //                 </div>
+                    //             </a>
+                    //         </div>
+                    //     </div>
+                    //   `;
+                    // }
+                    // if (index === 3 && show) {
 
-                        categoriesData += `
-                        <div class="categories-container">
-                            <div class="categories-titleContainer">
-                                <div class="categories-title">
+                    //     categoriesData += `
+                    //     <div class="categories-container">
+                    //         <div class="categories-titleContainer">
+                    //             <div class="categories-title">
                                     
-                                </div>
-                                <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
-                                    <p>View All</p>
-                                </div> -->
-                            </div>
-                            <div class="categories-main" id="">
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv0">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/8e5ebc17-0723-4a51-a48d-3c30047256bb.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <h4></h4>
-                                    </div>
-                                </a>
+                    //             </div>
+                    //             <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
+                    //                 <p>View All</p>
+                    //             </div> -->
+                    //         </div>
+                    //         <div class="categories-main" id="">
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv0">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/8e5ebc17-0723-4a51-a48d-3c30047256bb.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <h4></h4>
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6784.play.quizzop.com/" id="gameDiv1">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/9b2d8716-ba8b-40b6-9575-ed79dcc5c9d8.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <h4></h4>
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6784.play.quizzop.com/" id="gameDiv1">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/9b2d8716-ba8b-40b6-9575-ed79dcc5c9d8.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <h4></h4>
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv2">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/9cc51d28-763c-4b48-94b6-43f098670c08.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Funny Shooter - Destroy all enemies</h4> -->
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv2">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/9cc51d28-763c-4b48-94b6-43f098670c08.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Funny Shooter - Destroy all enemies</h4> -->
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6784.play.quizzop.com/" id="gameDiv3">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/24f2de77-95bb-4b41-9c72-262a7f9963e5.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Rabbit Samurai 2</h4> -->
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6784.play.quizzop.com/" id="gameDiv3">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/24f2de77-95bb-4b41-9c72-262a7f9963e5.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Rabbit Samurai 2</h4> -->
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6784.play.quizzop.com/" id="gameDiv4">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/33e5a4a7-e993-4b03-be0e-34b7266e5558.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Pro Obunga vs CreepEnder</h4> -->
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                      `;
-                    }
+                    //             <a class="game-containerMain" target="_blank" href="https://6784.play.quizzop.com/" id="gameDiv4">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/33e5a4a7-e993-4b03-be0e-34b7266e5558.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Pro Obunga vs CreepEnder</h4> -->
+                    //                 </div>
+                    //             </a>
+                    //         </div>
+                    //     </div>
+                    //   `;
+                    // }
                    
-                    if (index === 5 && show) {
+                    // if (index === 5 && show) {
 
-                        categoriesData += `
-                        <div class="categories-container">
-                            <div class="categories-titleContainer">
-                                <div class="categories-title">
+                    //     categoriesData += `
+                    //     <div class="categories-container">
+                    //         <div class="categories-titleContainer">
+                    //             <div class="categories-title">
                                     
-                                </div>
-                                <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
-                                    <p>View All</p>
-                                </div> -->
-                            </div>
-                            <div class="categories-main" id="">
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv0">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/062b42d3-2249-4173-912d-98217bbe6afd.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <h4></h4>
-                                    </div>
-                                </a>
+                    //             </div>
+                    //             <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
+                    //                 <p>View All</p>
+                    //             </div> -->
+                    //         </div>
+                    //         <div class="categories-main" id="">
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv0">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/062b42d3-2249-4173-912d-98217bbe6afd.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <h4></h4>
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv1">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/67f9247e-a942-458d-80d4-65fd87a34df4.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <h4></h4>
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv1">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/67f9247e-a942-458d-80d4-65fd87a34df4.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <h4></h4>
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6784.play.quizzop.com/" id="gameDiv2">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/83e0e435-627d-45e8-9c6e-003718742ede.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Funny Shooter - Destroy all enemies</h4> -->
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6784.play.quizzop.com/" id="gameDiv2">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/83e0e435-627d-45e8-9c6e-003718742ede.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Funny Shooter - Destroy all enemies</h4> -->
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv4">
-                                <div class="game-imgContainer">
-                                <img src="assets/creatives/314af315-7a94-4830-8f7b-6f27fff46f97.png" style="object-fit: fill;" width="100%" alt="">
-                                </div>
-                                <div class="game-title">
-                                <!-- <h4>Rabbit Samurai 2</h4> -->
-                                </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv4">
+                    //             <div class="game-imgContainer">
+                    //             <img src="assets/creatives/314af315-7a94-4830-8f7b-6f27fff46f97.png" style="object-fit: fill;" width="100%" alt="">
+                    //             </div>
+                    //             <div class="game-title">
+                    //             <!-- <h4>Rabbit Samurai 2</h4> -->
+                    //             </div>
+                    //             </a>
                                 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv3">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/682a6015-c198-4862-b206-ea259489fb95.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Pro Obunga vs CreepEnder</h4> -->
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                      `;
-                    }
-                    if (index === 6 && show) {
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv3">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/682a6015-c198-4862-b206-ea259489fb95.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Pro Obunga vs CreepEnder</h4> -->
+                    //                 </div>
+                    //             </a>
+                    //         </div>
+                    //     </div>
+                    //   `;
+                    // }
+                    // if (index === 6 && show) {
 
-                        categoriesData += `
-                        <div class="categories-container">
-                            <div class="categories-titleContainer">
-                                <div class="categories-title">
+                    //     categoriesData += `
+                    //     <div class="categories-container">
+                    //         <div class="categories-titleContainer">
+                    //             <div class="categories-title">
                                     
-                                </div>
-                                <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
-                                    <p>View All</p>
-                                </div> -->
-                            </div>
-                            <div class="categories-main" id="">
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv0">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/713fee02-17d8-4d87-9ce5-036766858ded.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <h4></h4>
-                                    </div>
-                                </a>
+                    //             </div>
+                    //             <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
+                    //                 <p>View All</p>
+                    //             </div> -->
+                    //         </div>
+                    //         <div class="categories-main" id="">
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv0">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/713fee02-17d8-4d87-9ce5-036766858ded.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <h4></h4>
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv1">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/5917c284-736b-49fd-a5ec-1045b4810e3e.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <h4></h4>
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv1">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/5917c284-736b-49fd-a5ec-1045b4810e3e.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <h4></h4>
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv2">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/28746518-101a-4337-a46c-c1d0908cfb0b.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Funny Shooter - Destroy all enemies</h4> -->
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv2">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/28746518-101a-4337-a46c-c1d0908cfb0b.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Funny Shooter - Destroy all enemies</h4> -->
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv4">
-                                <div class="game-imgContainer">
-                                <img src="assets/creatives/92090680-8d2d-4882-9295-bb60326b3be9.png" style="object-fit: fill;" width="100%" alt="">
-                                </div>
-                                <div class="game-title">
-                                <!-- <h4>Rabbit Samurai 2</h4> -->
-                                </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv4">
+                    //             <div class="game-imgContainer">
+                    //             <img src="assets/creatives/92090680-8d2d-4882-9295-bb60326b3be9.png" style="object-fit: fill;" width="100%" alt="">
+                    //             </div>
+                    //             <div class="game-title">
+                    //             <!-- <h4>Rabbit Samurai 2</h4> -->
+                    //             </div>
+                    //             </a>
                                 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv3">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/baf8a028-3d10-4116-89c7-f164cc5f8266.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Pro Obunga vs CreepEnder</h4> -->
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                      `;
-                    }
-                    if (index === 7 && show) {
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv3">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/baf8a028-3d10-4116-89c7-f164cc5f8266.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Pro Obunga vs CreepEnder</h4> -->
+                    //                 </div>
+                    //             </a>
+                    //         </div>
+                    //     </div>
+                    //   `;
+                    // }
+                    // if (index === 7 && show) {
 
-                        categoriesData += `
-                        <div class="categories-container">
-                            <div class="categories-titleContainer">
-                                <div class="categories-title">
+                    //     categoriesData += `
+                    //     <div class="categories-container">
+                    //         <div class="categories-titleContainer">
+                    //             <div class="categories-title">
                                     
-                                </div>
-                                <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
-                                    <p>View All</p>
-                                </div> -->
-                            </div>
-                            <div class="categories-main" id="">
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv0">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/de4e3baa-649f-4523-9d70-549a6584aa7e.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <h4></h4>
-                                    </div>
-                                </a>
+                    //             </div>
+                    //             <!-- <div class="ViewMore-Container" onclick="setCategoryObj('Adventure')">
+                    //                 <p>View All</p>
+                    //             </div> -->
+                    //         </div>
+                    //         <div class="categories-main" id="">
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv0">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/de4e3baa-649f-4523-9d70-549a6584aa7e.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <h4></h4>
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv1">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/ea86249d-eb56-4be1-b7ec-9dd842fe03bd.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <h4></h4>
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv1">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/ea86249d-eb56-4be1-b7ec-9dd842fe03bd.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <h4></h4>
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv2">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/ecba6485-a322-4fea-98af-066efcceb788.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Funny Shooter - Destroy all enemies</h4> -->
-                                    </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv2">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/ecba6485-a322-4fea-98af-066efcceb788.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Funny Shooter - Destroy all enemies</h4> -->
+                    //                 </div>
+                    //             </a>
 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv4">
-                                <div class="game-imgContainer">
-                                <img src="assets/creatives/eb223c41-4c3b-4bf2-b591-25d6185d3d72.png" style="object-fit: fill;" width="100%" alt="">
-                                </div>
-                                <div class="game-title">
-                                <!-- <h4>Rabbit Samurai 2</h4> -->
-                                </div>
-                                </a>
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv4">
+                    //             <div class="game-imgContainer">
+                    //             <img src="assets/creatives/eb223c41-4c3b-4bf2-b591-25d6185d3d72.png" style="object-fit: fill;" width="100%" alt="">
+                    //             </div>
+                    //             <div class="game-title">
+                    //             <!-- <h4>Rabbit Samurai 2</h4> -->
+                    //             </div>
+                    //             </a>
                                 
-                                <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv3">
-                                    <div class="game-imgContainer">
-                                        <img src="assets/creatives/0cf68e5d-46c6-47a2-9e0d-d91d391a9c04.png" style="object-fit: fill;" width="100%" alt="">
-                                    </div>
-                                    <div class="game-title">
-                                        <!-- <h4>Pro Obunga vs CreepEnder</h4> -->
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                      `;
-                    }
+                    //             <a class="game-containerMain" target="_blank" href="https://6780.play.gamezop.com/" id="gameDiv3">
+                    //                 <div class="game-imgContainer">
+                    //                     <img src="assets/creatives/0cf68e5d-46c6-47a2-9e0d-d91d391a9c04.png" style="object-fit: fill;" width="100%" alt="">
+                    //                 </div>
+                    //                 <div class="game-title">
+                    //                     <!-- <h4>Pro Obunga vs CreepEnder</h4> -->
+                    //                 </div>
+                    //             </a>
+                    //         </div>
+                    //     </div>
+                    //   `;
+                    // }
                     data?.forEach((game, index) => {
                         if (params.has('id')) {
 
