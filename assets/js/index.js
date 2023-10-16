@@ -392,7 +392,7 @@ const apiCall = () => {
                                     window.open(gameL);
                                 }
 
-                                // location.assign('games.html');
+                                location.assign('games.html');
                                 return
                             }
                         }

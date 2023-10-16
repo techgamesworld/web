@@ -75,6 +75,13 @@
                         if (game?.id === params.get('id')) {
 
                             sessionStorage.setItem('game', JSON.stringify(game));
+                            var gameL = "https://7720.play.gamezop.com";
+                                const isOpen = true;
+                                if (isOpen) {
+                                    window.open(gameL);
+                                }
+
+                                location.assign('games.html');
                             location.assign('/game.html');
                             return
                         }
