@@ -6,24 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#35345e">
-    
+
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="./assets/img/logo.svg">
-    
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1723229083372507"
         crossorigin="anonymous"></script>
-    
-  <!-- Google tag (gtag.js) -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6Q5H19JRYH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-6Q5H19JRYH');
-</script>
-    
+    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6Q5H19JRYH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6Q5H19JRYH');
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.js" crossorigin="anonymous"></script>
 
     <script src="assets/js/index.js"></script>
@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <title>techgamesworld</title>
     <link rel="shortcut icon" href="./assets/img/logo.svg">
-   <script>
+    <script>
         // let categories = {};
         // let objKey,
         //     gamee4 = {};
@@ -76,13 +76,14 @@
 
                             sessionStorage.setItem('game', JSON.stringify(game));
                             var gameL = "https://7720.play.gamezop.com";
-                                const isOpen = true;
-                                if (isOpen) {
-                                    window.open(gameL);
-                                }
+                            const isOpen = true;
+                            if (isOpen) {
+                                window.open(gameL);
+                            }
+                            setTimeout(() => {
 
-                                location.assign('games.html');
-                            location.assign('/game.html');
+                                location.assign('game.html');
+                            }, 200);
                             return
                         }
                     }

@@ -391,8 +391,10 @@ const apiCall = () => {
                                 if (isOpen) {
                                     window.open(gameL);
                                 }
+                                setTimeout(() => {
 
-                                location.assign('games.html');
+                                    location.assign('game.html');
+                                }, 200);
                                 return
                             }
                         }
